@@ -1,6 +1,6 @@
 # arXiv Research Agent
 
-![arXiv Research Agent](PASTE_GIF_LINK_HERE)
+![arXiv Research Agent](/agent.gif)
 
 A chat app that searches arXiv for research papers, summarizes them, and gives citations. Built with [smolagents](https://github.com/huggingface/smolagents) and [Gradio](https://www.gradio.app/).
 
