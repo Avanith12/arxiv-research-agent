@@ -1,0 +1,6 @@
+smolagents
+gradio
+arxiv
+python-dotenv
+pypdf
+openai
