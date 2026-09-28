@@ -279,5 +279,15 @@ with gr.Blocks(title="arXiv Research Agent") as demo:
     chat_button.click(export_chat, inputs=chatbot, outputs=download_file)
 
 
+try:
+    import spaces
+
+    # ZeroGPU Spaces refuse to start unless at least one @spaces.GPU function exists.
+    @spaces.GPU
+    def zero_gpu_check():
+        pass
+except ImportError:
+    pass
+
 if __name__ == "__main__":
     demo.launch(theme=gr.themes.Monochrome())
